@@ -5,6 +5,11 @@ This is monitoring the containers in the system with the use of [cAdvisor](https
 ## How to use
 
 - Install [Docker](https://docs.docker.com/get-docker/).
+- Create a `.env` file with content:
+  ```properties
+  GF_SECURITY_ADMIN_USER=admin
+  GF_SECURITY_ADMIN_PASSWORD=password
+  ```
 - Run the monitoring orchestration in background: `docker compose up -d`
 - View Grafana UI: [http://localhost:3333](http://localhost:3333)
 - View cAdvisor: [http://localhost:8080](http://localhost:8080)
